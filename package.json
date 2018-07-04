@@ -1,0 +1,37 @@
+{
+  "name": "notify_slack_new_channel",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "repository": "https://github.com/ogontaro/notify_bookmeter_activity.git",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-runtime": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "serverless": "^1.27.2",
+    "serverless-offline": "^3.20.3",
+    "serverless-webpack": "^5.1.3",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@slack/client": "^4.2.0",
+    "i18next": "^11.2.3",
+    "json-loader": "^0.5.7",
+    "lodash": "^4.17.10",
+    "yaml-loader": "^0.5.0"
+  },
+  "scripts": {
+    "start": "serverless offline start",
+    "deploy": "serverless deploy",
+    "lint": "eslint app/**.*js --fix"
+  }
+}
